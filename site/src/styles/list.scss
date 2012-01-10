@@ -1,0 +1,23 @@
+.list {
+  line-height: 2.0;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid gray;
+  float: left;
+
+  &.small {
+    width: 200px;
+  }
+  &.big {
+    width: 400px;
+  }
+
+  > ul {
+    padding: 10px;
+
+    border-radius: inherit;
+  }
+
+  h3 {
+    padding: 2px 10px;
+  }
+}

@@ -1,0 +1,3 @@
+[submodule "site/extern/backbone"]
+	path = site/extern/backbone
+	url = https://github.com/documentcloud/backbone.git

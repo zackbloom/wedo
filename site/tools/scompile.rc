@@ -1,0 +1,7 @@
+screen bash -c 'cd ../src; mkdir -p ../public/html; ../../tools/jade.js -w --out ../public html'
+split
+focus
+screen bash -c 'cd ..; mkdir -p public/styles; compass watch'
+split
+focus
+screen bash -c 'mkdir -p ../public/scripts; coffee -c -w -o ../public/scripts ../src/scripts'
