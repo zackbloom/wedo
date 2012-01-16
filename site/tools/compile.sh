@@ -4,8 +4,12 @@ cd ../site
 # Jade
 mkdir -p ./public/html; cd ./src; ../../tools/jade.js --out ../public html
 
+cd ..;
+# CoffeeScript
+mkdir -p public/scripts; coffee -c -o ./public/scripts ./src/scripts
+
 # Sass
-cd ..; mkdir -p public/styles; 
+mkdir -p public/styles; 
 
 sass --watch src/styles:public/styles
 
@@ -18,6 +22,4 @@ sass --watch src/styles:public/styles
 
 #cd ../../
 
-# CoffeeScript
-mkdir -p public/scripts; coffee -c -o ./public/scripts ./src/scripts
 

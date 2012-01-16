@@ -4,37 +4,54 @@ html
     script(src='../../extern/jquery-1.7.1.js')
     script(src='../../extern/jquery-ui/jquery-ui-1.8.16.custom.min.js')
 
+    script(src='../../extern/underscore.js')
+    script(src='../../extern/backbone.js')
+    script(src='../../extern/backbone-localstorage.js')
+      
+    script(src='../../extern/jquery.isotope.min.js')
+
+    script(src='../scripts/data/entry.js')
+
+    script(src='../scripts/ui/entry_view.js')
+    script(src='../scripts/ui/list_view.js')
+
+    script(src='../scripts/pages/app/view.js')
+    script(src='../scripts/pages/app/list_height.js')
+    script(src='../scripts/pages/app/add_form.js')
+    script(src='../scripts/pages/app/order.js')
+
     link(rel='stylesheet', href='../styles/reset.css')
 
     link(rel='stylesheet', href='../../extern/jquery-ui/jquery-ui-1.8.16.custom.css')
 
+    link(rel='stylesheet', href='../styles/utils.css')
     link(rel='stylesheet', href='../styles/list.css')
   
   body
-    .list.small.left
-      h3.ui-widget-header Karen
-      ul.ui-widget-content
-        li Eat
-        li Clean
-        li Die
+    #app
+      .list.small.left(user-id='karen')
+        h3.ui-widget-header Karen
+        ul.ui-widget-content
+          li Eat
+          li Clean
+          li Die
 
-    .list.big
-      h3.ui-widget-header You
-      ul.ui-widget-content
-        li Sleep
-        li Swim
-        li Sweep
+      .list.big(user-id='bob')
+        h3.ui-widget-header
+          | You
+          a(href="#add") +
+        ul.ui-widget-content
 
-    .list.small.right
-      h3.ui-widget-header Jim
-      ul.ui-widget-content
-        li Drive
-        li Stop
-        li Capture
+      .list.small.right(user-id='jim')
+        h3.ui-widget-header Jim
+        ul.ui-widget-content
+          li Drive
+          li Stop
+          li Capture
 
-    .list.small.right
-      h3.ui-widget-header Buck
-      ul.ui-widget-content
-        li Climb
-        li Fall
-        li Rise
+      .list.small.right(user-id='buck')
+        h3.ui-widget-header Buck
+        ul.ui-widget-content
+          li Climb
+          li Fall
+          li Rise
