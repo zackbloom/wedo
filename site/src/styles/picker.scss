@@ -1,0 +1,16 @@
+.picker {
+  width: 15px;
+  height: 15px;
+  border: 3px ridge #CCC;
+  cursor: pointer;
+
+  &.red {
+    background-color: #D33;
+  }
+  &.gray {
+    background-color: #BBB;
+  }
+  &.blue {
+    background-color: #66C;
+  }
+}

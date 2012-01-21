@@ -2,9 +2,9 @@ $ ->
   $(".list.big ul").isotope
     itemSelector: 'li'
     layoutMode: 'straightDown'
+    resizesContainer: false
 
     sortBy: 'alpha'
     getSortData:
       alpha: ($elem) ->
-        console.log $elem.text()
-        $elem.text()
+        $elem.text().toLowerCase()
