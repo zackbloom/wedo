@@ -13,8 +13,11 @@ $ ->
         this.model.save
           priority: value
 
+        return true
+
       ).picker
         value: this.model.attributes.priority
-      
 
+      $(this.el).attr 'start_time', this.model.start_time
+      
       this

@@ -11,3 +11,4 @@ $ ->
     entry = $D.entries.create
       user_id: 'bob'
       label: name
+      start_time: Date.now()

@@ -7,7 +7,7 @@ class Picker
     @value ?= @opts.value ? @opts.default_color
 
     @$elem.addClass 'picker'
-    @$elem.addClass @value
+    do @update
 
     @$elem.click (e) =>
       do e.preventDefault
@@ -27,6 +27,8 @@ class Picker
       @$elem.removeClass color
 
     @$elem.addClass @value
+
+    @$elem.attr('value', @value)
 
     @$elem.trigger 'pickerUpdate', [@value]
 
